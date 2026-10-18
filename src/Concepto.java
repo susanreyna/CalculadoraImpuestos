@@ -8,10 +8,10 @@
 public class Concepto {
 
     // ===== Atributos =====
-    private String descripcion;
-    private String tipo;       // "Producto" o "Servicio"
-    private double precio;     // precio sin IVA
-    private double tasaIva;    // tasa en porcentaje: 16, 8 o 0
+    private final String descripcion;
+    private final String tipo;       // "Producto" o "Servicio"
+    private final double precio;     // precio sin IVA
+    private final double tasaIva;    // tasa en porcentaje: 16, 8 o 0
 
     // ===== Constructor =====
     // Asigna los datos iniciales del concepto al crearlo con "new"
