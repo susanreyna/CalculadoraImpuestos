@@ -2,7 +2,6 @@
  * Clase Concepto
  * Representa un concepto que declara impuestos: puede ser un producto o un servicio.
  * Permite calcular un impuesto, como el IVA y el importe final del concepto.
- *
  * Autor: Susan Irene Pereyra Reyna
  */
 public class Concepto {
@@ -23,17 +22,14 @@ public class Concepto {
     }
 
     // ===== Métodos =====
-
     // Calcula y regresa el monto de IVA del concepto
     public double calcularIva() {
         return precio * tasaIva / 100;
     }
-
     // Calcula y regresa el importe final (precio + IVA)
     public double calcularTotal() {
         return precio + calcularIva();
     }
-
     // Muestra en consola la información del concepto y sus cálculos
     public void mostrarInformacion() {
         System.out.println(tipo + ": " + descripcion);
